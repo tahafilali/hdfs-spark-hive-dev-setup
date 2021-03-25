@@ -12,15 +12,15 @@ download: download_hadoop download_spark download_hive
 
 download_hadoop:
 	mkdir -p ${current_dir}tools
-	cd ${current_dir}tools; wget http://www-us.apache.org/dist/hadoop/common/hadoop-2.7.2/hadoop-2.7.2.tar.gz && tar -xvf hadoop-2.7.2.tar.gz && rm -rf hadoop-2.7.2.tar.gz
+        cd ${current_dir}tools; wget https://downloads.apache.org/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz && tar -xvf hadoop-3.2.2.tar.gz && rm -rf hadoop-3.2.2.tar.gz
 
 download_spark:
 	mkdir -p ${current_dir}tools
-	cd ${current_dir}tools; wget https://dl.dropboxusercontent.com/u/4882345/packages/spark-2.0.0-bin.tgz && tar -xvf spark-2.0.0-bin.tgz && rm -rf spark-2.0.0-bin.tgz
+        cd ${current_dir}tools; wget https://downloads.apache.org/spark/spark-3.1.1/spark-3.1.1-bin-hadoop3.2.tgz && tar -xvf spark-3.1.1-bin-hadoop3.2.tgz && rm -rf spark-3.1.1-bin-hadoop3.2.tgz
 
 download_hive:
 	mkdir -p ${current_dir}tools
-	cd ${current_dir}tools; wget http://www-us.apache.org/dist/hive/hive-2.1.0/apache-hive-2.1.0-bin.tar.gz && tar -xvf apache-hive-2.1.0-bin.tar.gz && rm -rf apache-hive-2.1.0-bin.tar.gz
+        cd ${current_dir}tools; wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz  && tar -xvf apache-hive-3.1.2-bin.tar.gz  && rm -rf apache-hive-3.1.2-bin.tar.gz
 
 configure: configure_hadoop configure_spark
 
