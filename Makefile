@@ -1,8 +1,8 @@
 mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 current_dir := $(dir $(mkfile_path))
-hive_home := $(addsuffix tools/apache-hive-2.1.0-bin, $(current_dir))
-hadoop_home := $(addsuffix tools/hadoop-2.7.2, $(current_dir))
-spark_home := $(addsuffix tools/spark-2.0.0-bin, $(current_dir))
+hive_home := $(addsuffix tools/apache-hive-3.1.2-bin, $(current_dir))
+hadoop_home := $(addsuffix tools/hadoop-3.2.2, $(current_dir))
+spark_home := $(addsuffix tools/spark-3.1.1-bin-hadoop3.2, $(current_dir))
 
 #########################################
 # Configuration and start/stop commands #
